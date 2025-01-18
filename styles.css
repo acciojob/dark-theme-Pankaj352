@@ -1,5 +1,11 @@
 #app{
-  height:90vh;
+	height:90vh;
+	width:100%;
+	
+}
+
+#ptag{
+	align-items:center;
 }
 .night{
   background-color: black;
