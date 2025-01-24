@@ -1,15 +1,17 @@
-const swapbtn = document.getElementById('swap');
-const bgScreen = document.getElementById('app');
+const swapBtn = document.getElementById("swap"); // Select the button
+const appContainer = document.getElementById("app"); // Select the main container
 
-swapbtn.addEventListener('click', () => {
-  
-  bgScreen.classList.toggle('night');
+// Add event listener to the button
+swapBtn.addEventListener("click", () => {
+  // Toggle the "night" class on the main container
+  appContainer.classList.toggle("night");
 
-  if (bgScreen.classList.contains('night')) {
-    swapbtn.classList.remove('button_day');
-    swapbtn.classList.add('button_night');
+  // Update the button's class dynamically
+  if (appContainer.classList.contains("night")) {
+    swapBtn.classList.remove("button_day");
+    swapBtn.classList.add("button_night");
   } else {
-    swapbtn.classList.remove('button_night');
-    swapbtn.classList.add('button_day');
+    swapBtn.classList.remove("button_night");
+    swapBtn.classList.add("button_day");
   }
 });
