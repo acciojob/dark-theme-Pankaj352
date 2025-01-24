@@ -5,8 +5,8 @@ const bgScreen=document.getElementById('app');
 
 
 swapbtn.addEventListener('click', ()=>{
-	bgScreen.classList.add('night');
-	swapbtn.classList.remove('button_night');
-	swapbtn.classList.remove('night');
+	bgScreen.classList.toggle('night');
+	// swapbtn.classList.remove('button_night');
+	// swapbtn.classList.remove('night');
 })
 
